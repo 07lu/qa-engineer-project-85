@@ -263,25 +263,3 @@
     - Нажать на кнопку "Show"
   expected-result: |
      Открываются записи игроков, которые прошли турнир
-
-- summary: |
-    Проверка работоспособности игры при выигрыше
-  requirement: |
-    При правильном режении игры, при условии, что он выполнил задание раньше противника, пользователь побеждает
-  prerequisites: |
-    Пользователь заранее создал игру с ботом 
-  test-data: |
-    Поле пустое
-  steps:
-    - Выбрать язык кода NodeJS
-    - Выбрать игру "rect_area"
-    - Вписать решение задачи
-"const _ = require("lodash");
-const R = require("rambda");
-const solution = (width, length) => {
-  return width * length;
-};
-module.exports = solution;"
-    - Нажать кнопку "Run"
-  expected-result: |
-    Открывается окно с уведомлением "Вы победили"

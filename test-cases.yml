@@ -275,7 +275,7 @@
   steps:
     - Выбрать язык кода NodeJS
     - Выбрать игру "rect_area"
-    - Вписать решение задачи:
+    - Вписать решение задачи
 "const _ = require("lodash");
 const R = require("rambda");
 
